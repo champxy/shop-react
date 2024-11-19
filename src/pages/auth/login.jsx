@@ -4,7 +4,7 @@ import {toast} from 'react-toastify';
 import useShopStore from '../../store/shop-store';
 import { Link, useNavigate  } from 'react-router-dom';
 
-const login = () => {
+const Login = () => {
 
   const navigate = useNavigate()
   const actionLogin = useShopStore(state => state.actionLogin)
@@ -98,4 +98,4 @@ const login = () => {
   
 }
 
-export default login
+export default Login;

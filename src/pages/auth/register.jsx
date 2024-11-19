@@ -16,7 +16,7 @@ const registerSchema = z.object({
   path: ['confirmPassword'],
 })
 
-const register = () => {
+const Register = () => {
   const [passwordScore, setPasswordScore] = useState(0)
 
 
@@ -125,4 +125,4 @@ const register = () => {
 
 }
 
-export default register
+export default Register
