@@ -3,7 +3,7 @@ import useShopStore from '../../store/shop-store'
 import { createProduct } from '../../api/Product'
 import { toast } from 'react-toastify'
 import TableFormProduct from './TableFormProduct'
-import Uploadfile from './uploadfile'
+import Uploadfile from './Uploadfile'
 
 
 const initialState = {
