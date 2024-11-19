@@ -1,0 +1,15 @@
+/* CartCard.css */
+.cart-card {
+    position: fixed; /* Keep it fixed on the screen */
+    top: 1rem; /* Adjust vertical position */
+    right: 1rem; /* Adjust horizontal position */
+    width: 300px; /* Set a fixed width */
+    max-height: calc(100% - 2rem); /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    background-color: #f9fafb; /* Background color */
+    padding: 1rem; /* Padding around the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    z-index: 10; /* Ensure it appears above other content */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+  }
+  

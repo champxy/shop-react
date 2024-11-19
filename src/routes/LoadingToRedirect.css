@@ -1,0 +1,49 @@
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Light gradient for the container */
+    color: #333;
+    text-align: center; /* Center text alignment */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Strong shadow for depth */
+    padding: 40px 20px; /* Increased padding for a spacious layout */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.loading-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.loader-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #ffffff 30%, #f0f0f0 70%); /* Radial gradient for the loader */
+    border-radius: 50%;
+    width: 100px; /* Size of the loader wrapper */
+    height: 100px; /* Size of the loader wrapper */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 30px; /* Space below the loader */
+    transition: background 0.3s ease; /* Transition for background color */
+}
+
+.loader-wrapper:hover {
+    background: radial-gradient(circle, #ffffff 20%, #f0f0f0 80%); /* Change background on hover */
+}
+
+.loading-icon {
+    width: 60px; /* Increased icon size */
+    height: 60px; /* Increased icon size */
+    animation: spin 1s linear infinite; /* Adding spin animation */
+}
+
+/* Animation for the loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
